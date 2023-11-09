@@ -1,0 +1,36 @@
+{
+  "local_memory_node": {
+    "machine_num": 3,
+    "machine_id": 0,
+    "local_port": 12346,
+    "local_meta_port": 12347,
+    "use_pm": 0,
+    "pm_root": "/dev/dax0.1",
+    "reserve_GB": 6,
+    "max_client_num_per_mn": 50,
+    "per_thread_delta_size_MB": 50,
+    "workload": "TPCC"
+  },
+  "remote_compute_nodes": {
+    "compute_node_ips": [
+      "10.0.0.7"
+    ],
+    "compute_node_ports": [
+      12345
+    ]
+  },
+  "other_memory_nodes": {
+    "memory_node_ips": [
+      "10.0.0.3",
+      "10.0.0.5"
+    ],
+    "memory_node_ids": [
+      1,
+      2
+    ],
+    "memory_node_ports": [
+      12346,
+      12346
+    ]
+  }
+}

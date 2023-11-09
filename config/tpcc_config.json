@@ -1,0 +1,20 @@
+{
+  "tpcc": {
+    "num_warehouse": 24,
+    "warehouse_bkt_num": 24,
+
+    "num_district_per_warehouse": 10,
+    "district_bkt_num": 10,
+    
+    "num_customer_per_district": 300,
+    "customer_bkt_num": 350,
+    
+    "num_stock_per_warehouse": 10000,
+    "stock_bkt_num": 20000,
+    
+    "num_item": 10000,
+    "item_bkt_num": 10000,
+    
+    "attempted_num": 50000
+  }
+}
