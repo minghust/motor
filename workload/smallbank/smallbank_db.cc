@@ -71,7 +71,7 @@ void SmallBank::LoadTable(node_id_t node_id,
       }
 
       if ((node_id_t)SmallBankTableType::kCheckingTable % num_server == (node_id - i + num_server) % num_server) {
-        RDMA_LOG(DBG) << "[Backup] CHECKING table ID: " << (node_id_t)SmallBankTableType::kSavingsTable;
+        RDMA_LOG(DBG) << "[Backup] CHECKING table ID: " << (node_id_t)SmallBankTableType::kCheckingTable;
         std::cerr << "Number of initial records: " << std::dec << checking_table->GetInitInsertNum() << std::endl;
         backup_table_ptrs.push_back(checking_table);
       }
